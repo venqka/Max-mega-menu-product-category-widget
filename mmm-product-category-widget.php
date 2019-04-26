@@ -10,6 +10,9 @@ Version: 1.0
 
 function dn_mmm_enqueue() {
 
+	wp_register_script( 'dn-mmm-script', plugin_dir_url( __FILE__ ) . 'scripts.js', array( 'jquery' ), '1.0', false );
+	wp_enqueue_script( 'dn-mmm-script', plugin_dir_url( __FILE__ ) . 'scripts.js', array( 'jquery' ), '1.0', false );
+
 	/*frontend styles*/
 	wp_enqueue_style( 'dn-mmm-style', plugin_dir_url( __FILE__ ) . 'style.css', array(), '1.0', false );
 
