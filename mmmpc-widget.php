@@ -27,15 +27,7 @@ class mmmpcw extends WP_Widget {
 		ob_start();
 
 	?>
-		Here be content
-		<div class="dnmmm-widget-content-wrap">
-			<div class="dnmmm-widget-content dnmmm-widget-content-category-description">
-				
-			</div>
-			<div class="dnmmm-widget-content dnmmm-widget-content-category-image">
-			
-			</div>	
-		</div>	
+		<div class="dnmmm-widget-content-wrap"></div>	
 	<?php
 
 		$product_category_info = ob_get_clean();
