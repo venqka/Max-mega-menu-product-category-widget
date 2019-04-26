@@ -18,3 +18,10 @@ function dn_mmm_enqueue() {
 
 }
 add_action( 'wp_enqueue_scripts', 'dn_mmm_enqueue' );
+
+include( 'mmmpc-widget.php' );
+
+function register_mmmpc_widget() {
+	register_widget( 'mmmpcw' );
+}	
+add_action( 'widgets_init', 'register_mmmpc_widget' );
